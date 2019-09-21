@@ -1,0 +1,8 @@
+1.	Loop trough all images and create divs with different images
+2.	Add section and divs structure css
+3.	Add darker backround on images
+4.	Add zoom animation 
+5.	Write if statements to add wanted classes to specific divs
+6.	Add titles and filter buttons html, css
+7.	Create filter logic
+8.	Create script to change buttons active class
