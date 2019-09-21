@@ -1,0 +1,136 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* section structure */
+.work{
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#container{
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+/* divs style, img styles and href placement in a middle*/
+ .work div{
+  width: 33.333%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+img{
+  padding: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+ #workhref{
+  position:absolute;
+  top: 30%;
+  left:40%;
+  padding: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* darker backround during hover */
+#workdiv .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#workdiv:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+
+/* css for image zoom effect */
+
+
+#workdiv {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+#workdiv img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+#workdiv:hover img {
+  transform: scale(1.2);
+}
+
+/* filer, buttons and fonts css */
+#myBtnContainer{
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.filterDiv{
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.work h2{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: -10px;
+  margin-top: 90px;
+}
+
+.work p{
+  margin-bottom: 60px;
+  margin-top: 15px;
+  color: #333;
+}
+
+.work span{
+  color: #4e32ac;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.work button{
+  margin-right: 10px;
+  padding: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+}
+
+.work button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+
+#myBtnContainer .active{
+  background-color: blue;
+  color: #fff;
+}
