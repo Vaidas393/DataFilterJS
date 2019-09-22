@@ -1,4 +1,4 @@
-1.	Loop trough all images and create divs with different images
+1.	Loop trough all images and create divs with different classes
 2.	Add section and divs structure css
 3.	Add darker backround on images
 4.	Add zoom animation 
